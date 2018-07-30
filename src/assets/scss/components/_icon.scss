@@ -1,0 +1,37 @@
+/* Icon */
+.icon {
+	@include icon;
+	border-bottom: none;
+	position: relative;
+	height: 2em;
+}
+
+.fa-twitter {
+	&:hover {
+		color: #1da1f2 !important;
+	}
+}
+
+.fa-facebook {
+	&:hover {
+		color: #8b9dc3 !important;
+	}
+}
+
+.fa-instagram {
+	&:hover {
+		color: #bc2a8d !important;
+	}
+}
+
+.fa-github {
+	&:hover {
+		color: #c6cbd1 !important;
+	}
+}
+
+.fa-linkedin {
+	&:hover {
+		color: #0077b5 !important;
+	}
+}
