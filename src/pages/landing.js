@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
-import Slideshow from '../components/Slideshow'
+import MainParallax from '../components/MainParallax'
 
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
@@ -17,7 +17,7 @@ const Landing = props => (
 
     <div id="main">
       <section id="one">
-        <Slideshow />
+        <MainParallax />
       </section>
     </div>
   </div>

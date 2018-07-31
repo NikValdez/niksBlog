@@ -7,7 +7,7 @@ export default class Typing extends Component {
       <Typist>
         <Typist.Delay ms={1500} />
         <span> Hi, my name's Nick</span>
-        <Typist.Backspace count={3} delay={600} />
+        <Typist.Backspace count={3} delay={400} />
         <span>ik</span>
         <Typist.Backspace count={19} delay={1500} />
         <span> Welcome to my site </span>

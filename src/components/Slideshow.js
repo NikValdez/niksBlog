@@ -1,6 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-spring'
 import styles from '../assets/css/styles.css'
+import Iframe from 'react-iframe'
 
 const Page = ({ offset, caption, first, second, gradient, onClick }) => (
   <React.Fragment>
@@ -39,19 +40,20 @@ class Slideshow extends React.Component {
           horizontal
           scrolling={false}
         >
-          <Page
-            offset={0}
-            gradient="pink"
-            caption="who we are"
-            first="Lorem ipsum"
-            second="dolor sit"
-            onClick={() => this.scroll(1)}
-          />
+          <a href="nerdvestor.com" target="blank">
+            <Page
+              offset={0}
+              gradient="pink"
+              caption={<a href="nerdvestor.com">Test</a>}
+              first="Lorem ipsum"
+              second="dolor sit"
+              onClick={() => this.scroll(1)}
+            />
+          </a>
           <Page
             offset={1}
             gradient="teal"
-            caption="what we do"
-            first="consectetur"
+            caption="This is a test"
             second="adipiscing elit"
             onClick={() => this.scroll(2)}
           />
