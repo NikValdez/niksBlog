@@ -1,60 +1,65 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
+import ReactDOM from 'react-dom'
+import { Parallax } from 'react-spring'
 
-import pic11 from '../assets/images/pic11.jpg'
+class Generic extends React.Component {
+  render() {
+    const styles = {
+      fontFamily: 'Menlo-Regular, Menlo, monospace',
+      fontSize: 14,
+      lineHeight: '10px',
+      color: 'white',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }
+    return (
+      <Parallax ref="parallax" pages={3}>
+        <Parallax.Layer
+          offset={0}
+          speed={1}
+          style={{ backgroundColor: '#243B4A' }}
+        />
+        <Parallax.Layer
+          offset={1}
+          speed={1}
+          style={{ backgroundColor: '#805E73' }}
+        />
+        <Parallax.Layer
+          offset={2}
+          speed={1}
+          style={{ backgroundColor: '#87BCDE' }}
+        />
 
-const Generic = props => (
-  <div>
-    <Helmet>
-      <title>Nik Cochran</title>
-      <meta name="description" content="Generic Page" />
-    </Helmet>
+        <Parallax.Layer
+          offset={0}
+          speed={0.5}
+          style={styles}
+          onClick={() => this.refs.parallax.scrollTo(1)}
+        >
+          Click!
+        </Parallax.Layer>
 
-    <div id="main" className="alt">
-      <section id="one">
-        <div className="inner">
-          <header className="major">
-            <h1>Generic</h1>
-          </header>
-          <span className="image main">
-            <img src={pic11} alt="" />
-          </span>
-          <p>
-            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
-            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
-            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-            Curabitur sapien risus, commodo eget turpis at, elementum convallis
-            elit. Pellentesque enim turpis, hendrerit.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
-          <p>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
-            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
-            Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
-            risus, commodo eget turpis at, elementum convallis elit.
-            Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
-          </p>
-        </div>
-      </section>
-    </div>
-  </div>
-)
+        <Parallax.Layer
+          offset={1}
+          speed={-0.1}
+          style={styles}
+          onClick={() => this.refs.parallax.scrollTo(2)}
+        >
+          Another page ...
+        </Parallax.Layer>
+
+        <Parallax.Layer
+          offset={2}
+          speed={0.5}
+          style={styles}
+          onClick={() => this.refs.parallax.scrollTo(0)}
+        >
+          The end.
+        </Parallax.Layer>
+      </Parallax>
+    )
+  }
+}
 
 export default Generic

@@ -40,16 +40,15 @@ class Slideshow extends React.Component {
           horizontal
           scrolling={false}
         >
-          <a href="nerdvestor.com" target="blank">
-            <Page
-              offset={0}
-              gradient="pink"
-              caption={<a href="nerdvestor.com">Test</a>}
-              first="Lorem ipsum"
-              second="dolor sit"
-              onClick={() => this.scroll(1)}
-            />
-          </a>
+          <Page
+            offset={0}
+            gradient="pink"
+            caption={<a href="nerdvestor.com">Test</a>}
+            first="Lorem ipsum"
+            second="dolor sit"
+            onClick={() => this.scroll(1)}
+          />
+
           <Page
             offset={1}
             gradient="teal"

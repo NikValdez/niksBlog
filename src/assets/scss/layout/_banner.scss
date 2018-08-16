@@ -1,12 +1,7 @@
-///
-/// Forty by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
 /* Banner */
 #banner {
 	@include vendor('align-items', 'center');
-	@include vendor('background-image', 'url("../images/nikTyping.gif")');
+	@include vendor('background-image', 'url("../images/NikFaceTimelapse.gif")');
 	@include vendor('display', 'flex');
 	@include padding(4em, 0, (2em, 0, 0, 0));
 	background-attachment: fixed;
@@ -222,4 +217,8 @@
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 50;
 	font-size: 35px !important;
+}
+
+#wrapper > * > * > .inner {
+	margin-top: 12rem !important;
 }

@@ -159,8 +159,8 @@ class MainParallax extends React.Component {
           >
             <Iframe
               url="https://www.youtube.com/embed/X5etBoimQMU?rel=0"
-              width="450px"
-              height="450px"
+              width="100rem"
+              height="50rem"
               id="myId"
               className="DsonIframe"
               display="initial"
