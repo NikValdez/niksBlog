@@ -1,5 +1,7 @@
 import React from 'react'
 import Typing from './Typing'
+import { Parallax } from 'react-spring'
+import DownArrow from '../assets/images/down-arrow.png'
 
 class Banner extends React.Component {
   render() {
@@ -14,8 +16,8 @@ class Banner extends React.Component {
           <div className="content">
             <ul className="actions">
               <li>
-                <a href="#one" className="button next scrolly">
-                  Get Started
+                <a href="#main">
+                  <img src={DownArrow} style={{ height: '100px' }} />
                 </a>
               </li>
             </ul>

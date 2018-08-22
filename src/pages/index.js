@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Banner from '../components/Banner'
-import Slideshow from '../components/Slideshow'
+import SimpleParallax from '../components/SimpleParallax'
 import Footer from '../components/Footer'
 
 class HomeIndex extends React.Component {
@@ -20,7 +20,7 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div id="main">
-          <Slideshow />
+          <SimpleParallax />
         </div>
 
         <Footer />

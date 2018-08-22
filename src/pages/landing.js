@@ -4,10 +4,6 @@ import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 import MainParallax from '../components/MainParallax'
 
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
-
 const Landing = props => (
   <div>
     <Helmet>

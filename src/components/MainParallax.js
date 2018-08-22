@@ -36,12 +36,12 @@ class MainParallax extends React.Component {
           <Parallax.Layer
             offset={1}
             speed={1}
-            style={{ backgroundColor: '#805E73' }}
+            style={{ backgroundColor: '#1d0621' }}
           />
           <Parallax.Layer
             offset={2}
             speed={1}
-            style={{ backgroundColor: '#87BCDE' }}
+            style={{ backgroundColor: 'black' }}
           />
 
           <Parallax.Layer
@@ -58,71 +58,17 @@ class MainParallax extends React.Component {
             offset={1.3}
             speed={-0.3}
             style={{ pointerEvents: 'none' }}
-          >
-            <img
-              src={url('satellite4')}
-              style={{ width: '15%', marginLeft: '70%' }}
-            />
-          </Parallax.Layer>
+          />
 
-          <Parallax.Layer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '20%', marginLeft: '55%' }}
-            />
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '10%', marginLeft: '15%' }}
-            />
-          </Parallax.Layer>
+          <Parallax.Layer offset={1} speed={0.8} style={{ opacity: 0.1 }} />
 
-          <Parallax.Layer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '20%', marginLeft: '70%' }}
-            />
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '20%', marginLeft: '40%' }}
-            />
-          </Parallax.Layer>
+          <Parallax.Layer offset={1.75} speed={0.5} style={{ opacity: 0.1 }} />
 
-          <Parallax.Layer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '10%', marginLeft: '10%' }}
-            />
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '20%', marginLeft: '75%' }}
-            />
-          </Parallax.Layer>
+          <Parallax.Layer offset={1} speed={0.2} style={{ opacity: 0.2 }} />
 
-          <Parallax.Layer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '20%', marginLeft: '60%' }}
-            />
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '25%', marginLeft: '30%' }}
-            />
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '10%', marginLeft: '80%' }}
-            />
-          </Parallax.Layer>
+          <Parallax.Layer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }} />
 
-          <Parallax.Layer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '20%', marginLeft: '5%' }}
-            />
-            <img
-              src={url('cloud')}
-              style={{ display: 'block', width: '15%', marginLeft: '75%' }}
-            />
-          </Parallax.Layer>
+          <Parallax.Layer offset={2.6} speed={0.4} style={{ opacity: 0.6 }} />
 
           <Parallax.Layer
             offset={2.5}
@@ -133,9 +79,7 @@ class MainParallax extends React.Component {
               justifyContent: 'center',
               pointerEvents: 'none',
             }}
-          >
-            <img src={url('earth')} style={{ width: '60%' }} />
-          </Parallax.Layer>
+          />
 
           <Parallax.Layer
             offset={2}
@@ -143,7 +87,6 @@ class MainParallax extends React.Component {
             style={{
               backgroundSize: '80%',
               backgroundPosition: 'center',
-              backgroundImage: url('clients', true),
             }}
           />
 
@@ -159,8 +102,8 @@ class MainParallax extends React.Component {
           >
             <Iframe
               url="https://www.youtube.com/embed/X5etBoimQMU?rel=0"
-              width="100rem"
-              height="50rem"
+              width="50rem"
+              height="30rem"
               id="myId"
               className="DsonIframe"
               display="initial"
@@ -179,12 +122,22 @@ class MainParallax extends React.Component {
               justifyContent: 'center',
             }}
           >
-            <img src={url('bash')} style={{ width: '40%' }} />
+            <Iframe
+              url="https://www.youtube.com/embed/gAAjQoq_nbE?rel=0"
+              width="50rem"
+              height="30rem"
+              id="myId"
+              className="DsonIframe"
+              display="initial"
+              position="relative"
+              allowFullScreen
+            />
           </Parallax.Layer>
 
           <Parallax.Layer
             offset={2}
-            speed={-0}
+            speed={0.1}
+            onClick={() => this.parallax.scrollTo(3)}
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -192,8 +145,28 @@ class MainParallax extends React.Component {
             }}
             onClick={() => this.parallax.scrollTo(0)}
           >
-            <img src={url('clients-main')} style={{ width: '40%' }} />
+            <Iframe
+              url="https://www.youtube.com/embed/X5etBoimQMU?rel=0"
+              width="50rem"
+              height="30rem"
+              id="myId"
+              className="DsonIframe"
+              display="initial"
+              position="relative"
+              allowFullScreen
+            />
           </Parallax.Layer>
+
+          <Parallax.Layer
+            offset={3}
+            speed={-0}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+            onClick={() => this.parallax.scrollTo(0)}
+          />
         </Parallax>
       </section>
     )

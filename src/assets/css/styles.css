@@ -61,7 +61,3 @@
 .tomato {
   background: linear-gradient(to right, tomato 0%, gold 100%);
 }
-
-.DsonIframe {
-  z-index: 100000 !important;
-}
