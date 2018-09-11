@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Iframe from 'react-iframe'
 
-import { Parallax } from 'react-spring'
+import { Parallax, ParallaxLayer } from 'react-spring'
 const url = (name, wrap = false) =>
   `${
     wrap ? 'url(' : ''

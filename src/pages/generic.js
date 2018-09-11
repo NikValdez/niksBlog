@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Parallax } from 'react-spring'
+import { Parallax, ParallaxLayer } from 'react-spring'
 
 class Generic extends React.Component {
   render() {

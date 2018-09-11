@@ -6,7 +6,7 @@ export default class Typing extends Component {
     return (
       <Typist>
         <Typist.Delay ms={1500} />
-        <span> Hi, my name's Nick</span>
+        <span> Hi, my names Nick</span>
         <Typist.Backspace count={3} delay={400} />
         <span>ik</span>
         <Typist.Backspace count={19} delay={1500} />

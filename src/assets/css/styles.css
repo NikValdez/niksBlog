@@ -1,4 +1,4 @@
-.container>div>div {
+.container > div > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,10 +40,16 @@
 }
 
 .slopeEnd {
-  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%);
+  clip-path: polygon(
+    70% 0,
+    100% 0,
+    calc(100% - 20vw) 100%,
+    calc(70% - 20vw) 100%
+  );
 }
 
-.slopeBegin, .slopeEnd {
+.slopeBegin,
+.slopeEnd {
   position: absolute;
   width: 140%;
   height: 100%;
@@ -60,4 +66,33 @@
 
 .tomato {
   background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+#zags-game {
+  margin: 5rem;
+}
+
+#dson-1 {
+  margin: 10rem;
+}
+
+#dson-2 {
+  margin: 10rem;
+}
+
+.video-scroll {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+#video {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.parallax-container {
+  background-image: url('../images/nik-joventut.jpeg');
+}
+
+html {
+  overflow-x: hidden;
 }

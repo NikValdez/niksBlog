@@ -3,66 +3,57 @@ import { Parallax } from 'react-spring'
 import styles from '../assets/css/styles.css'
 import Iframe from 'react-iframe'
 
-const Page = ({ offset, caption, first, second, gradient, onClick }) => (
-  <React.Fragment>
-    <Parallax.Layer offset={offset} speed={0.2} onClick={onClick}>
-      <div className="slopeBegin" />
-    </Parallax.Layer>
-
-    <Parallax.Layer offset={offset} speed={-0.2} onClick={onClick}>
-      <div className={`slopeEnd ${gradient}`} />
-    </Parallax.Layer>
-
-    <Parallax.Layer className="text number" offset={offset} speed={0.3}>
-      <span>0{offset + 1}</span>
-    </Parallax.Layer>
-
-    <Parallax.Layer className="text header" offset={offset} speed={0.4}>
-      <span>
-        <p style={{ fontSize: 20 }}>{caption}</p>
-        <div className={`stripe ${gradient}`} />
-        <p>{first}</p>
-        <p>{second}</p>
-      </span>
-    </Parallax.Layer>
-  </React.Fragment>
-)
-
 class Slideshow extends React.Component {
   scroll = to => this.refs.parallax.scrollTo(to)
   render() {
     return (
-      <div>
+      <div className="paralax-background">
         <Parallax
-          className="container"
+          className="parallax-container"
           ref="parallax"
           pages={3}
           horizontal
-          scrolling={false}
+          scrolling={true}
         >
-          <Page
-            offset={0}
-            gradient="pink"
-            caption={<a href="nerdvestor.com">Test</a>}
-            first="Lorem ipsum"
-            second="dolor sit"
-            onClick={() => this.scroll(1)}
+          <Iframe
+            url="https://www.youtube.com/embed/X5etBoimQMU?rel=0"
+            width="45rem"
+            height="25rem"
+            id="zags-game"
+            className="DsonIframe"
+            display="initial"
+            position="relative"
+            allowFullScreen
           />
-
-          <Page
-            offset={1}
-            gradient="teal"
-            caption="This is a test"
-            second="adipiscing elit"
-            onClick={() => this.scroll(2)}
+          <Iframe
+            url="https://www.youtube.com/embed/gAAjQoq_nbE?rel=0"
+            width="45rem"
+            height="25rem"
+            id="zags-game"
+            className="DsonIframe"
+            display="initial"
+            position="relative"
+            allowFullScreen
           />
-          <Page
-            offset={2}
-            gradient="tomato"
-            caption="what we want"
-            first="Morbi quis"
-            second="est dignissim"
-            onClick={() => this.scroll(0)}
+          <Iframe
+            url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTwoPointsBball%2Fvideos%2F866447253368803%2F&show_text=0"
+            width="45rem"
+            height="30rem"
+            id="spain-highlight"
+            className="DsonIframe"
+            display="initial"
+            position="relative"
+            allowFullScreen
+          />
+          <Iframe
+            url="https://www.youtube.com/embed/CERn7ftKQEM?rel=0"
+            width="45rem"
+            height="25rem"
+            id="zags-game"
+            className="test"
+            display="initial"
+            position="relative"
+            allowFullScreen
           />
         </Parallax>
       </div>
