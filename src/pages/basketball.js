@@ -13,11 +13,13 @@ const Basketball = props => (
       <meta name="description" content="Basketball Page" />
     </Helmet>
 
-    <div class="fullscreen-video-wrap">
-      <h1>
+    <div className="fullscreen-video-wrap">
+      <h1 className="typing-title title-center">
         <Typist className="video-scroll">
           <Typist.Delay ms={200} />
-          <span>Scroll at the bottom to see more videos</span>
+          <span>
+            Use the scroll bar at the bottom of the page to see more videos
+          </span>
         </Typist>
       </h1>
       <video muted autoPlay loop id="video">

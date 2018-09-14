@@ -90,9 +90,18 @@
   margin-right: 5rem;
 }
 .parallax-container {
-  background-image: url('../images/nik-joventut.jpeg');
+  background-image: url('../images/nikJoventut.png');
 }
 
 html {
   overflow-x: hidden;
+}
+
+.title-center {
+  text-align: center;
+}
+
+.lanky-background {
+  background-image: url('../images/lankyBastard.jpg');
+  background-size: cover !important;
 }

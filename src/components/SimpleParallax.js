@@ -18,7 +18,7 @@ class SimpleParallax extends React.Component {
         <Parallax.Layer
           offset={0}
           speed={1}
-          style={{ backgroundColor: '#243B4A' }}
+          style={{ background: '#243B4A' }}
         />
         <Parallax.Layer
           offset={1}
@@ -36,6 +36,7 @@ class SimpleParallax extends React.Component {
           speed={0.5}
           style={styles}
           onClick={() => this.refs.parallax.scrollTo(1)}
+          className="lanky-background"
         >
           Click!
         </Parallax.Layer>
