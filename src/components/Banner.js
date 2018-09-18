@@ -15,11 +15,15 @@ class Banner extends React.Component {
           </header>
           <div className="content">
             <ul className="actions">
-              <li>
-                <a href="#main">
-                  <img src={DownArrow} style={{ height: '100px' }} />
-                </a>
-              </li>
+              <div class="btn-wrapper">
+                <div class="btn-wrapper__container">
+                  <div class="btn-inner">
+                    <a class="btn-inner__text" href="#main">
+                      Onward!
+                    </a>
+                  </div>
+                </div>
+              </div>
             </ul>
           </div>
         </div>

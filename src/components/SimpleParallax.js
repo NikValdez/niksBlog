@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Parallax } from 'react-spring'
+import vid from '../videos/ry-highlight.mp4'
 
 class SimpleParallax extends React.Component {
   render() {
@@ -38,16 +39,27 @@ class SimpleParallax extends React.Component {
           onClick={() => this.refs.parallax.scrollTo(1)}
           className="lanky-background"
         >
-          Click!
+          <div class="btn-wrapper">
+            <div class="btn-wrapper__container">
+              <div class="btn-inner">
+                <a class="btn-inner__text" href="#main">
+                  Onward!
+                </a>
+              </div>
+            </div>
+          </div>
         </Parallax.Layer>
 
         <Parallax.Layer
           offset={1}
           speed={-0.1}
-          style={styles}
           onClick={() => this.refs.parallax.scrollTo(2)}
         >
-          Another page ...
+          <div className="fullscreen-video-wrap">
+            <video muted autoPlay loop id="video" style={{ height: '50%' }}>
+              <source src={vid} autoPlay loop autoPlay />
+            </video>
+          </div>
         </Parallax.Layer>
 
         <Parallax.Layer

@@ -1,4 +1,7 @@
 /* Banner */
+
+$blue: #15b5e2;
+$btn-bg: #10131c;
 #banner {
   @include vendor('align-items', 'center');
   @include vendor('background-image', 'url("../images/NikFaceTimelapse.gif")');
@@ -222,9 +225,9 @@
 }
 
 .typing-title {
-  font-family: 'Caveat', cursive;
+  font-family: 'Reenie Beanie', cursive;
   font-weight: 50;
-  font-size: 35px !important;
+  font-size: 45px !important;
 }
 
 #wrapper > * > * > .inner {
@@ -233,4 +236,72 @@
 
 #banner.major {
   margin-bottom: -9.5rem;
+}
+
+.btn-wrapper {
+  width: 150px;
+  height: 40px;
+  position: relative;
+  margin: 40px auto 0;
+
+  &:hover {
+    .btn-inner {
+      top: -4px;
+      transform: scale(1, 1);
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    border-bottom: 2px solid $blue;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+
+    &:before,
+    &:after {
+      border-bottom: 2px solid $blue;
+      width: 96%;
+      left: 2%;
+      bottom: -8px;
+      content: '';
+      position: absolute;
+    }
+
+    &:after {
+      width: 92%;
+      left: 4%;
+      bottom: -14px;
+    }
+
+    .btn-inner {
+      width: 104.2%;
+      height: 100%;
+      position: absolute;
+      top: 20px;
+      left: -2.1%;
+      border: 2px solid $blue;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Reenie Beanie';
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 40px;
+      background: #1c244e;
+      transform: scale(0.96, 0.96);
+      transition: all 0.3s;
+      z-index: 4;
+
+      &__text {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+  }
+}
+
+.video-main-page {
+  height: 50%;
 }
