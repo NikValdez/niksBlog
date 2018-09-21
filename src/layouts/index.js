@@ -5,7 +5,6 @@ import '../assets/scss/main.scss'
 import Header from '../components/Header'
 import Menu from '../components/Menu'
 import Contact from '../components/Contact'
-
 import Typing from '../components/Typing'
 import PropTypes from 'prop-types'
 

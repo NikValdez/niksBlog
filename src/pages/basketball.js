@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import vid from '../videos/ry-highlight.mp4'
+import vid from '../videos/kansasShot.mp4'
 import Typist from 'react-typist'
 
 import Slideshow from '../components/Slideshow'

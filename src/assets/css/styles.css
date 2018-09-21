@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Coming+Soon|Fredericka+the+Great|Nothing+You+Could+Do|Reenie+Beanie');
+
 .container > div > div {
   display: flex;
   align-items: center;
@@ -85,7 +87,7 @@
   margin-left: 5rem;
 }
 
-#video {
+.video-main-page {
   height: 30rem !important;
   margin-top: 5rem;
   margin-bottom: 5rem;

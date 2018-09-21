@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Parallax } from 'react-spring'
-import vid from '../videos/ry-highlight.mp4'
+import vid from '../videos/kansasShot.mp4'
 
 class SimpleParallax extends React.Component {
   render() {
@@ -19,17 +19,17 @@ class SimpleParallax extends React.Component {
         <Parallax.Layer
           offset={0}
           speed={1}
-          style={{ background: '#243B4A' }}
+          style={{ backgroundColor: '#243B4A' }}
         />
         <Parallax.Layer
           offset={1}
           speed={1}
-          style={{ backgroundColor: '#805E73' }}
+          style={{ backgroundColor: '#243B4A' }}
         />
         <Parallax.Layer
           offset={2}
           speed={1}
-          style={{ backgroundColor: '#87BCDE' }}
+          style={{ backgroundColor: '#243B4A' }}
         />
 
         <Parallax.Layer
@@ -56,7 +56,7 @@ class SimpleParallax extends React.Component {
           onClick={() => this.refs.parallax.scrollTo(2)}
         >
           <div className="fullscreen-video-wrap">
-            <video muted autoPlay loop id="video" style={{ height: '50%' }}>
+            <video muted autoPlay loop id="video-main-page">
               <source src={vid} autoPlay loop autoPlay />
             </video>
           </div>
